@@ -6,12 +6,12 @@ const LISTINGS = [
   {
     id: 1, title: "Sunny double in Victorian terrace", area: "St Dunstan's", postcode: "CT2 8BU",
     price: 650, bills: true, deposit: 650, handoverDate: "Feb 1", availableUntil: "Jun 30",
-    uni: "UKC", walkMins: 12, gender: "Any", houseSize: 4, currentHousemates: "2 girls, 1 boy — all 2nd yrs",
+    uni: "UKC", walkMins: 12, gender: "Any", houseSize: 4, currentHousemates: "2 girls, 1 boy â€” all 2nd yrs",
     lister: { name: "Freya M.", year: "Year 2 Politics", type: "Student", verified: true, rating: 4.9, responses: "usually replies in 2hrs" },
     features: ["Double bed", "Garden", "Fast wifi", "Washer/dryer", "Ensuite"],
     gradient: "from-[#D9F54B] via-[#C4CFAB] to-[#8B9A65]", pattern: "dots",
-    reason: "Starting a placement in London — using my RRA exit right.",
-    description: "Gorgeous high-ceilinged room in a period four-bed, 12 mins walk to UKC main gate. South-facing so light all afternoon. Housemates are lovely — 2 girls, 1 guy, all 2nd years, mix of Politics/English/Biosci. Big garden, two bathrooms, proper kitchen. Fully furnished + my plants stay if you want them.",
+    reason: "Starting a placement in London â€” using my RRA exit right.",
+    description: "Gorgeous high-ceilinged room in a period four-bed, 12 mins walk to UKC main gate. South-facing so light all afternoon. Housemates are lovely â€” 2 girls, 1 guy, all 2nd years, mix of Politics/English/Biosci. Big garden, two bathrooms, proper kitchen. Fully furnished + my plants stay if you want them.",
   },
   {
     id: 2, title: "Bright single, 4 mins from Cathedral", area: "City Centre", postcode: "CT1 2PG",
@@ -20,18 +20,18 @@ const LISTINGS = [
     lister: { name: "Jamal K.", year: "Year 3 Law", type: "Student", verified: true, rating: 5.0, responses: "usually replies same day" },
     features: ["Desk + chair", "Fast wifi", "Bills included", "Bike storage"],
     gradient: "from-[#E85D42] via-[#E89B7D] to-[#F4EFE6]", pattern: "stripes",
-    reason: "Graduating a term early — done with dissertation.",
+    reason: "Graduating a term early â€” done with dissertation.",
     description: "Proper central room in a quiet 5-bed. Walk to CCCU in 4, UKC bus from the corner. Solid desk setup, thick walls (you can actually study). Everyone's chill and mostly in the library by March anyway.",
   },
   {
-    id: 3, title: "Parkwood Court — Studio 14B", area: "Parkwood (UKC)", postcode: "CT2 7TT",
+    id: 3, title: "Parkwood Court â€” Studio 14B", area: "Parkwood (UKC)", postcode: "CT2 7TT",
     price: 198, bills: true, deposit: 0, handoverDate: "Jan 20", availableUntil: "Jun 14",
     uni: "UKC", walkMins: 2, gender: "Any", houseSize: 1, currentHousemates: "Self-contained studio",
     lister: { name: "Kent Hospitality (UKC)", year: "Official partner", type: "Institution", verified: true, rating: 4.7, responses: "office hours" },
     features: ["Ensuite", "Weekly clean", "24/7 security", "All bills", "On campus"],
     gradient: "from-[#0F1115] via-[#2A2D35] to-[#4B5162]", pattern: "grid",
-    reason: "Student withdrawn under RRA — room released to marketplace.",
-    description: "On-campus studio released by the University of Kent following a Renters' Rights Act exit. Rent is per week (£198/wk = ~£858/month). Move-in packs, security, and 24/7 support. Full university contract — no deposit.",
+    reason: "Student withdrawn under RRA â€” room released to marketplace.",
+    description: "On-campus studio released by the University of Kent following a Renters' Rights Act exit. Rent is per week (Â£198/wk = ~Â£858/month). Move-in packs, security, and 24/7 support. Full university contract â€” no deposit.",
     isPerWeek: true,
   },
   {
@@ -41,8 +41,8 @@ const LISTINGS = [
     lister: { name: "Lucia R.", year: "Year 2 Spanish & English", type: "Student", verified: true, rating: 4.8, responses: "replies within a day" },
     features: ["Double bed", "Huge kitchen", "Garden", "Cheap rent"],
     gradient: "from-[#F4A43A] via-[#F4D9A8] to-[#F4EFE6]", pattern: "waves",
-    reason: "Year abroad in Barcelona — bye Canterbury ❤️",
-    description: "Cheapest decent room in Hales Place honestly. Six-bed, all girls, genuinely nice vibes — movie nights, group dinners, shared Ocado. 18 min walk to campus or the Unibus stops 2 mins away.",
+    reason: "Year abroad in Barcelona â€” bye Canterbury â¤ï¸",
+    description: "Cheapest decent room in Hales Place honestly. Six-bed, all girls, genuinely nice vibes â€” movie nights, group dinners, shared Ocado. 18 min walk to campus or the Unibus stops 2 mins away.",
   },
   {
     id: 5, title: "Modern ensuite with balcony", area: "Wincheap", postcode: "CT1 3RY",
@@ -57,12 +57,12 @@ const LISTINGS = [
   {
     id: 6, title: "Twin room in terraced 5-bed", area: "Military Road", postcode: "CT1 1LA",
     price: 625, bills: true, deposit: 625, handoverDate: "Feb 1", availableUntil: "Jun 30",
-    uni: "CCCU", walkMins: 8, gender: "Any", houseSize: 5, currentHousemates: "Mixed — 2nd & 3rd yrs",
-    lister: { name: "Canterbury Student Homes", year: "Verified agency", type: "Agency", verified: true, rating: 4.4, responses: "office hours, Mon–Sat" },
+    uni: "CCCU", walkMins: 8, gender: "Any", houseSize: 5, currentHousemates: "Mixed â€” 2nd & 3rd yrs",
+    lister: { name: "Canterbury Student Homes", year: "Verified agency", type: "Agency", verified: true, rating: 4.4, responses: "office hours, Monâ€“Sat" },
     features: ["Ensuite", "Cleaner fortnightly", "High-speed wifi", "Managed"],
     gradient: "from-[#0F1115] via-[#E85D42] to-[#F4A43A]", pattern: "stripes",
-    reason: "Previous tenant used RRA two-month notice — we're re-letting directly.",
-    description: "Managed property, we handle all the tenancy admin. Agency viewing fees waived for Handover users. References required, standard AST with pro-rated rent from handover date.",
+    reason: "Previous tenant used RRA two-month notice â€” we're re-letting directly.",
+    description: "Managed property, we handle all the tenancy admin. Agency viewing fees waived for Handover users. References required, standard assured periodic tenancy with pro-rated rent from handover date.",
   },
   {
     id: 7, title: "Small but perfect single", area: "St Michael's Road", postcode: "CT2 7AH",
@@ -72,7 +72,7 @@ const LISTINGS = [
     features: ["Single bed", "Desk", "Quiet street", "Near Asda"],
     gradient: "from-[#E89B7D] via-[#F4D9A8] to-[#C4CFAB]", pattern: "waves",
     reason: "Taking the rest of the year out for health reasons.",
-    description: "Smaller room but honestly so cute — fairy lights, big window, south-facing. House is quiet, good for studying. Rent includes everything. Please be respectful of the housemates, they've been lovely to me.",
+    description: "Smaller room but honestly so cute â€” fairy lights, big window, south-facing. House is quiet, good for studying. Rent includes everything. Please be respectful of the housemates, they've been lovely to me.",
   },
   {
     id: 8, title: "Double with desk nook", area: "Old Dover Road", postcode: "CT1 3JA",
@@ -81,8 +81,8 @@ const LISTINGS = [
     lister: { name: "Rory D.", year: "Year 3 Sport Science", type: "Student", verified: true, rating: 4.7, responses: "replies quickly" },
     features: ["Double bed", "Built-in desk", "Garden", "Cheap pub nearby"],
     gradient: "from-[#D9F54B] via-[#F4A43A] to-[#E85D42]", pattern: "grid",
-    reason: "Moving in with my girlfriend — sorry lads.",
-    description: "Proper lad house, five mins to CCCU. Room's the biggest in the house (I nabbed it first). Garden's good in summer. Beer fridge included in the handover if you want it 🍺",
+    reason: "Moving in with my girlfriend â€” sorry lads.",
+    description: "Proper lad house, five mins to CCCU. Room's the biggest in the house (I nabbed it first). Garden's good in summer. Beer fridge included in the handover if you want it ðŸº",
   },
 ];
 
@@ -152,12 +152,12 @@ function ListingCard({ listing, favorites, toggleFav, onOpen }) {
         <div className="flex items-start justify-between gap-3 mb-3">
           <h3 className="text-[17px] leading-tight font-medium text-[#0F1115]">{listing.title}</h3>
           <div className="text-right shrink-0">
-            <div className="text-[20px] font-semibold leading-none text-[#0F1115]">£{listing.price}<span className="text-[11px] font-normal text-[#0F1115]/60">{listing.isPerWeek ? "/wk" : "/mo"}</span></div>
+            <div className="text-[20px] font-semibold leading-none text-[#0F1115]">Â£{listing.price}<span className="text-[11px] font-normal text-[#0F1115]/60">{listing.isPerWeek ? "/wk" : "/mo"}</span></div>
           </div>
         </div>
         <div className="flex items-center gap-4 text-[12px] text-[#0F1115]/70 mb-4" style={{ fontFamily: "'DM Mono', monospace" }}>
           <span><Calendar className="inline w-3 h-3 mr-1 -mt-0.5" />{listing.handoverDate}</span>
-          <span><GraduationCap className="inline w-3 h-3 mr-1 -mt-0.5" />{listing.uni} · {listing.walkMins}min</span>
+          <span><GraduationCap className="inline w-3 h-3 mr-1 -mt-0.5" />{listing.uni} Â· {listing.walkMins}min</span>
         </div>
         <div className="pt-3 border-t border-[#0F1115]/10 flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -195,7 +195,7 @@ function ListingModal({ listing, onClose, favorites, toggleFav }) {
           <div className={`relative aspect-[16/7] bg-gradient-to-br ${listing.gradient} overflow-hidden`}>
             <PatternOverlay type={listing.pattern} />
             <div className="absolute bottom-6 left-6 right-20">
-              <div className="text-[11px] uppercase tracking-[0.2em] text-[#0F1115]/70 mb-2" style={{ fontFamily: "'DM Mono', monospace" }}>{listing.postcode} · {listing.area}</div>
+              <div className="text-[11px] uppercase tracking-[0.2em] text-[#0F1115]/70 mb-2" style={{ fontFamily: "'DM Mono', monospace" }}>{listing.postcode} Â· {listing.area}</div>
               <h2 className="text-[32px] md:text-[44px] leading-[0.95] text-[#0F1115] max-w-xl" style={{ fontFamily: "'Instrument Serif', serif" }}>{listing.title}</h2>
             </div>
           </div>
@@ -232,9 +232,9 @@ function ListingModal({ listing, onClose, favorites, toggleFav }) {
             {/* Sidebar */}
             <aside className="border border-[#0F1115]/15 p-5 bg-[#F4EFE6] h-fit sticky top-4">
               <div className="pb-4 border-b border-[#0F1115]/10 mb-4">
-                <div className="text-[28px] font-semibold text-[#0F1115] leading-none">£{listing.price}<span className="text-[13px] font-normal text-[#0F1115]/60"> {listing.isPerWeek ? "/ week" : "/ month"}</span></div>
-                <div className="text-[12px] text-[#0F1115]/60 mt-1" style={{ fontFamily: "'DM Mono', monospace" }}>{listing.bills ? "Bills included" : "Bills extra (~£60/mo)"}</div>
-                <div className="text-[12px] text-[#0F1115]/60" style={{ fontFamily: "'DM Mono', monospace" }}>Deposit: £{listing.deposit}</div>
+                <div className="text-[28px] font-semibold text-[#0F1115] leading-none">Â£{listing.price}<span className="text-[13px] font-normal text-[#0F1115]/60"> {listing.isPerWeek ? "/ week" : "/ month"}</span></div>
+                <div className="text-[12px] text-[#0F1115]/60 mt-1" style={{ fontFamily: "'DM Mono', monospace" }}>{listing.bills ? "Bills included" : "Bills extra (~Â£60/mo)"}</div>
+                <div className="text-[12px] text-[#0F1115]/60" style={{ fontFamily: "'DM Mono', monospace" }}>Deposit: Â£{listing.deposit}</div>
               </div>
 
               <div className="flex items-center gap-3 mb-4">
@@ -269,7 +269,7 @@ function ListingModal({ listing, onClose, favorites, toggleFav }) {
               </button>
 
               <div className="mt-4 pt-4 border-t border-[#0F1115]/10 text-[11px] text-[#0F1115]/60" style={{ fontFamily: "'DM Mono', monospace" }}>
-                <Shield className="inline w-3 h-3 mr-1 -mt-0.5" />Student ID verified · Deposit held in FCA-regulated scheme
+                <Shield className="inline w-3 h-3 mr-1 -mt-0.5" />Student email verified Â· Deposit returned via your protection scheme
               </div>
             </aside>
           </div>
@@ -355,14 +355,14 @@ export default function Handover() {
                 <span className="italic text-[#E85D42]">Pass it on.</span>
               </h1>
               <p className="text-[17px] md:text-[19px] leading-relaxed text-[#0F1115]/75 max-w-xl mb-8">
-                Canterbury's marketplace for student rooms being handed over mid-tenancy. Two-month notice under the Renters' Rights Act shouldn't cost you your deposit — it should find you a taker.
+                Canterbury's marketplace for student rooms being handed over mid-tenancy. Two-month notice under the Renters' Rights Act shouldn't cost you your deposit â€” it should find you a taker.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a href="#listings" className="bg-[#0F1115] text-[#F4EFE6] px-6 py-3.5 text-[15px] font-medium hover:bg-[#E85D42] transition-colors flex items-center gap-2 group">
                   Browse {LISTINGS.length} rooms<ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a href="#list" className="border-2 border-[#0F1115] px-6 py-3 text-[15px] font-medium hover:bg-[#D9F54B] transition-colors">
-                  List yours →
+                  List yours â†’
                 </a>
               </div>
             </div>
@@ -374,22 +374,22 @@ export default function Handover() {
                   <PatternOverlay type="dots" />
                   <div className="absolute bottom-3 left-3 right-3 text-[11px] mono" style={{ fontFamily: "'DM Mono', monospace" }}>
                     <div className="uppercase tracking-[0.14em] text-[#0F1115]/70">St Dunstan's</div>
-                    <div className="text-[#0F1115] text-[13px]">£650 · Feb 1</div>
+                    <div className="text-[#0F1115] text-[13px]">Â£650 Â· Feb 1</div>
                   </div>
                 </div>
                 <div className="absolute top-20 left-0 w-44 aspect-[4/5] bg-gradient-to-br from-[#E85D42] to-[#F4A43A] border-2 border-[#0F1115] rotate-[6deg] shadow-[8px_8px_0_0_#0F1115]">
                   <PatternOverlay type="stripes" />
                   <div className="absolute bottom-3 left-3 right-3 text-[11px] text-[#F4EFE6] mono" style={{ fontFamily: "'DM Mono', monospace" }}>
                     <div className="uppercase tracking-[0.14em] opacity-80">Wincheap</div>
-                    <div className="text-[13px]">£610 · Feb 15</div>
+                    <div className="text-[13px]">Â£610 Â· Feb 15</div>
                   </div>
                 </div>
                 <div className="absolute bottom-0 right-0 w-52 aspect-[4/5] bg-gradient-to-br from-[#0F1115] to-[#4B5162] border-2 border-[#0F1115] rotate-[-3deg] shadow-[8px_8px_0_0_#D9F54B]">
                   <PatternOverlay type="grid" />
-                  <div className="absolute top-3 left-3 bg-[#D9F54B] text-[#0F1115] text-[9px] uppercase tracking-[0.14em] px-2 py-0.5 mono" style={{ fontFamily: "'DM Mono', monospace" }}>UKC · On campus</div>
+                  <div className="absolute top-3 left-3 bg-[#D9F54B] text-[#0F1115] text-[9px] uppercase tracking-[0.14em] px-2 py-0.5 mono" style={{ fontFamily: "'DM Mono', monospace" }}>UKC Â· On campus</div>
                   <div className="absolute bottom-3 left-3 right-3 text-[11px] text-[#F4EFE6] mono" style={{ fontFamily: "'DM Mono', monospace" }}>
                     <div className="uppercase tracking-[0.14em] opacity-70">Parkwood</div>
-                    <div className="text-[13px]">£198/wk · Jan 20</div>
+                    <div className="text-[13px]">Â£198/wk Â· Jan 20</div>
                   </div>
                 </div>
               </div>
@@ -404,7 +404,7 @@ export default function Handover() {
                 <input
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  placeholder="St Dunstan's, UKC, CT2…"
+                  placeholder="St Dunstan's, UKC, CT2â€¦"
                   className="flex-1 bg-transparent outline-none text-[14px] placeholder:text-[#0F1115]/50"
                 />
               </div>
@@ -416,7 +416,7 @@ export default function Handover() {
                 {UNIS.map(u => <option key={u} value={u}>{u === 'all' ? 'Any university' : u}</option>)}
               </select>
               <div className="bg-[#F4EFE6] px-4 py-3 flex items-center gap-3 min-w-[220px]">
-                <span className="text-[11px] uppercase tracking-[0.14em] text-[#0F1115]/60 mono shrink-0" style={{ fontFamily: "'DM Mono', monospace" }}>Max £{maxPrice}</span>
+                <span className="text-[11px] uppercase tracking-[0.14em] text-[#0F1115]/60 mono shrink-0" style={{ fontFamily: "'DM Mono', monospace" }}>Max Â£{maxPrice}</span>
                 <input
                   type="range" min="400" max="800" step="25" value={maxPrice}
                   onChange={(e) => setMaxPrice(Number(e.target.value))}
@@ -436,12 +436,12 @@ export default function Handover() {
         <div className="marquee flex whitespace-nowrap items-center gap-12 text-[13px] uppercase tracking-[0.2em] mono" style={{ fontFamily: "'DM Mono', monospace" }}>
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex items-center gap-12 pr-12">
-              <span><span className="text-[#D9F54B]">◆</span> 47 active rooms in Canterbury</span>
-              <span><span className="text-[#D9F54B]">◆</span> UKC + CCCU + KMTP covered</span>
-              <span><span className="text-[#D9F54B]">◆</span> Avg handover time: 11 days</span>
-              <span><span className="text-[#D9F54B]">◆</span> £0 agency fees for students</span>
-              <span><span className="text-[#D9F54B]">◆</span> Kent only — for now</span>
-              <span><span className="text-[#D9F54B]">◆</span> Built by students, for students</span>
+              <span><span className="text-[#D9F54B]">â—†</span> 47 active rooms in Canterbury</span>
+              <span><span className="text-[#D9F54B]">â—†</span> UKC + CCCU + KMTP covered</span>
+              <span><span className="text-[#D9F54B]">â—†</span> Avg handover time: 11 days</span>
+              <span><span className="text-[#D9F54B]">â—†</span> Â£0 agency fees for students</span>
+              <span><span className="text-[#D9F54B]">â—†</span> Kent only â€” for now</span>
+              <span><span className="text-[#D9F54B]">â—†</span> Built by students, for students</span>
             </div>
           ))}
         </div>
@@ -487,9 +487,9 @@ export default function Handover() {
 
           <div className="grid md:grid-cols-3 gap-10 md:gap-6">
             {[
-              { n: "01", title: "Give notice", body: "Under the Renters' Rights Act, you serve your landlord two months' written notice — any time after four months in. We help you draft it in 30 seconds." },
-              { n: "02", title: "List in 5 minutes", body: "Photos, rent, handover date, why you're leaving. Student-ID verified listings rank higher. Completely free to list." },
-              { n: "03", title: "Hand over", body: "Messages, viewings, deposit escrow handled in-app. Your replacement signs with the landlord; you walk free. Your deposit comes back clean." },
+              { n: "01", title: "Give notice", body: "From 1 May 2026, the Renters' Rights Act gives you a statutory right to serve two months' written notice at any time during your tenancy. No break clauses, no landlord approval required. We help you draft it in 30 seconds." },
+              { n: "02", title: "List in 5 minutes", body: "Photos, rent, handover date, why you're leaving. Verified .ac.uk listings rank higher. Completely free to list." },
+              { n: "03", title: "Hand over", body: "Messages and viewings handled in-app. Your replacement signs a new tenancy directly with your landlord (subject to their agreement); your deposit returns via the protection scheme. We help coordinate the timing." },
             ].map((s, i) => (
               <div key={s.n} className="relative">
                 <div className="text-[12px] mono text-[#D9F54B] mb-4" style={{ fontFamily: "'DM Mono', monospace" }}>{s.n}</div>
@@ -513,7 +513,7 @@ export default function Handover() {
                 The <span className="italic">Renters' Rights Act</span> changed everything.
               </h2>
               <p className="text-[16px] leading-relaxed text-[#0F1115]/75 max-w-lg">
-                Before 2025, a fixed-term student AST locked you in for the whole year. Sub-let or eat the rent. That's over. Tenants can now serve two months' notice at any point after their fourth month — including students in HMOs.
+                Before May 2026, a fixed-term student AST locked you in for the whole year. Sub-let or eat the rent. That's over. From 1 May 2026, existing tenancies automatically convert to assured periodic tenancies â€” and tenants can serve two months' notice at any time, including students in shared HMOs.
               </p>
               <p className="text-[16px] leading-relaxed text-[#0F1115]/75 max-w-lg mt-4">
                 That freedom only works if you can find a replacement. That's us.
@@ -522,10 +522,10 @@ export default function Handover() {
 
             <div className="grid gap-4">
               {[
-                { q: "When can I serve notice?", a: "Any time after you've been in the tenancy four months. Notice is two months. No break clauses, no landlord approval required." },
-                { q: "Does my landlord have to re-let to whoever I find?", a: "No — but under the Act, periodic tenancies make it straightforward for your replacement to sign a new tenancy directly. We help coordinate the paperwork." },
-                { q: "What about joint tenancies?", a: "Joint HMOs are the tricky bit. We walk you through either (a) a deed of surrender + new AST, or (b) a deed of assignment. Both are handled in-app with template docs reviewed by a housing solicitor." },
-                { q: "Will I lose my deposit?", a: "Not if the handover's clean. Your deposit returns via the protection scheme; your replacement pays a fresh deposit to the landlord. We escrow the swap." },
+                { q: "When can I serve notice?", a: "From 1 May 2026, at any time during your tenancy. Notice is two months. No break clauses, no landlord approval required. (Note: some purpose-built student accommodation from code-registered providers may be exempt â€” check your tenancy agreement.)" },
+                { q: "Does my landlord have to re-let to whoever I find?", a: "No â€” your landlord's cooperation is required to grant a new tenancy to your replacement. In practice most landlords prefer a ready-to-sign replacement over a void period, which is where Handover comes in. We help coordinate the introduction and the paperwork." },
+                { q: "What about joint tenancies?", a: "Joint HMOs are the tricky bit. We walk you through either (a) a deed of surrender plus a new assured periodic tenancy for the remaining and incoming tenants, or (b) a deed of assignment to transfer your share. Both routes require landlord consent. Our template documents are provided for convenience â€” use them with independent legal advice." },
+                { q: "Will I lose my deposit?", a: "Not if the handover's clean. Your deposit returns to you via the government-approved protection scheme (DPS, MyDeposits or TDS), subject to any lawful deductions. Your replacement pays a fresh deposit directly to the landlord, which must also be protected in a scheme. Handover does not hold or handle deposit money." },
               ].map((item, i) => (
                 <details key={i} className="group bg-[#F4EFE6] border border-[#0F1115]/15 p-5 hover:border-[#0F1115]/40 transition-colors">
                   <summary className="cursor-pointer flex items-center justify-between text-[17px] font-medium leading-snug">
@@ -535,7 +535,7 @@ export default function Handover() {
                 </details>
               ))}
               <div className="text-[11px] mono text-[#0F1115]/50 mt-2" style={{ fontFamily: "'DM Mono', monospace" }}>
-                ◆ Not legal advice. Handover partners with a qualified housing solicitor; tenancy terms vary.
+                â—† Information only â€” not legal advice. Tenancy terms vary and some accommodation types (including certain PBSA from code-registered providers) may be exempt from parts of the Renters' Rights Act. We recommend independent advice before serving notice.
               </div>
             </div>
           </div>
@@ -552,7 +552,7 @@ export default function Handover() {
                 Universities & agents,<br />list <span className="italic">here too.</span>
               </h2>
               <p className="text-[16px] leading-relaxed text-[#0F1115]/75 max-w-lg mb-8">
-                Students are exiting tenancies faster than your re-letting pipeline can move. Handover gives you a verified demand stream — every listing reaches our active student network across Kent. Free to list up to five concurrent rooms; institutional dashboard from £99/mo.
+                Students are exiting tenancies faster than your re-letting pipeline can move. Handover gives you a verified demand stream â€” every listing reaches our active student network across Kent. Free to list up to five concurrent rooms; institutional dashboard from Â£99/mo.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
                 {[
@@ -575,8 +575,8 @@ export default function Handover() {
                 {[
                   { v: "2,800+", l: "Canterbury students on the network" },
                   { v: "11 days", l: "Average handover time" },
-                  { v: "£0", l: "Agency fees for students" },
-                  { v: "UKC · CCCU · KMTP", l: "Institutions covered at launch" },
+                  { v: "Â£0", l: "Agency fees for students" },
+                  { v: "UKC Â· CCCU Â· KMTP", l: "Institutions covered at launch" },
                 ].map((s, i) => (
                   <div key={i} className={`p-5 ${i % 2 === 0 ? 'bg-[#0F1115] text-[#F4EFE6]' : 'bg-[#D9F54B] text-[#0F1115]'} aspect-square flex flex-col justify-between`}>
                     <div className="text-[32px] md:text-[44px] leading-[0.9] tracking-tight" style={{ fontFamily: "'Instrument Serif', serif" }}>{s.v}</div>
@@ -616,7 +616,7 @@ export default function Handover() {
           </div>
 
           <div className="text-[15px] text-[#F4EFE6]/70 max-w-2xl">
-            Your university not listed? <a href="#" className="underline text-[#D9F54B] hover:text-[#F4EFE6]">Request your city</a> — we prioritise based on student demand. 200 sign-ups from one university unlocks a launch.
+            Your university not listed? <a href="#" className="underline text-[#D9F54B] hover:text-[#F4EFE6]">Request your city</a> â€” we prioritise based on student demand. 200 sign-ups from one university unlocks a launch.
           </div>
         </div>
       </section>
@@ -671,7 +671,7 @@ export default function Handover() {
             </div>
           </div>
           <div className="pt-8 border-t border-[#F4EFE6]/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[12px] text-[#F4EFE6]/50 mono" style={{ fontFamily: "'DM Mono', monospace" }}>
-            <div>© 2026 Handover Ltd. Built in Canterbury.</div>
+            <div>Â© 2026 Handover Ltd. Built in Canterbury.</div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-[#D9F54B]">Privacy</a>
               <a href="#" className="hover:text-[#D9F54B]">Terms</a>
