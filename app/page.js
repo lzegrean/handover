@@ -1,6 +1,53 @@
 "use client";
 import { useState, useEffect, useMemo } from 'react';
 import { Search, MapPin, Heart, Calendar, Users, ArrowRight, X, Check, Shield, Clock, Building2, GraduationCap, Sparkles, ChevronRight, Zap, Wifi, Flame, Droplet, Wind, Star } from 'lucide-react';
+import { supabase } from '../lib/supabase';
+
+// Visual presets cycled through listings so each card gets a different look
+const GRADIENTS = [
+  "from-[#D9F54B] via-[#C4CFAB] to-[#8B9A65]",
+  "from-[#F4A43A] via-[#E89B7D] to-[#C67D5A]",
+  "from-[#E85D42] via-[#D4826B] to-[#8B4A3A]",
+  "from-[#0F1115] via-[#2A2D35] to-[#4A4F5C]",
+  "from-[#8B9A65] via-[#A8B585] to-[#C4CFAB]",
+  "from-[#E89B7D] via-[#D4826B] to-[#B86C54]",
+  "from-[#C4CFAB] via-[#8B9A65] to-[#5A6B42]",
+  "from-[#F4A43A] via-[#E85D42] to-[#8B4A3A]",
+];
+const PATTERNS = ["dots", "stripes", "grid", "waves", "dots", "stripes", "grid", "waves"];
+
+// Transform a Supabase row into the shape the UI components expect
+function transformListing(row, index) {
+  return {
+    id: row.id,
+    title: row.title,
+    area: row.area,
+    postcode: row.postcode,
+    price: row.price_monthly,
+    bills: row.bills_included,
+    deposit: row.deposit,
+    handoverDate: row.handover_date ? new Date(row.handover_date).toLocaleDateString('en-GB', { month: 'short', day: 'numeric' }) : '',
+    availableUntil: row.available_until ? new Date(row.available_until).toLocaleDateString('en-GB', { month: 'short', day: 'numeric' }) : '',
+    uni: row.uni,
+    walkMins: row.walk_mins,
+    gender: row.gender_preference,
+    houseSize: row.house_size,
+    currentHousemates: row.current_housemates,
+    features: row.features || [],
+    description: row.description,
+    reason: row.reason,
+    gradient: GRADIENTS[index % GRADIENTS.length],
+    pattern: PATTERNS[index % PATTERNS.length],
+    lister: {
+      name: "Student",
+      year: "",
+      type: "Student",
+      verified: true,
+      rating: 4.8,
+      responses: "usually replies quickly",
+    },
+  };
+}
 
 const LISTINGS = [
   {
@@ -287,6 +334,35 @@ export default function Handover() {
   const [uniFilter, setUniFilter] = useState('all');
   const [billsOnly, setBillsOnly] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [listings, setListings] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [fetchError, setFetchError] = useState(null);
+
+  // Fetch listings from Supabase on mount
+  useEffect(() => {
+    async function fetchListings() {
+      try {
+        const { data, error } = await supabase
+          .from('listings')
+          .select('*')
+          .eq('status', 'active')
+          .order('created_at', { ascending: false });
+
+        if (error) throw error;
+
+        const transformed = (data || []).map((row, i) => transformListing(row, i));
+        setListings(transformed);
+      } catch (err) {
+        console.error('Error fetching listings:', err);
+        setFetchError(err.message);
+        // Fall back to hardcoded data if the DB fetch fails, so site still works
+        setListings(LISTINGS);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchListings();
+  }, []);
 
   useEffect(() => {
     const link = document.createElement('link');
@@ -304,13 +380,13 @@ export default function Handover() {
     });
   };
 
-  const filtered = useMemo(() => LISTINGS.filter(l => {
+  const filtered = useMemo(() => listings.filter(l => {
     if (search && !`${l.title} ${l.area} ${l.postcode}`.toLowerCase().includes(search.toLowerCase())) return false;
     if (l.price > maxPrice && !l.isPerWeek) return false;
     if (uniFilter !== 'all' && !l.uni.includes(uniFilter)) return false;
     if (billsOnly && !l.bills) return false;
     return true;
-  }), [search, maxPrice, uniFilter, billsOnly]);
+  }), [listings, search, maxPrice, uniFilter, billsOnly]);
 
   return (
     <div className="min-h-screen bg-[#F4EFE6] text-[#0F1115]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
@@ -359,7 +435,7 @@ export default function Handover() {
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a href="#listings" className="bg-[#0F1115] text-[#F4EFE6] px-6 py-3.5 text-[15px] font-medium hover:bg-[#E85D42] transition-colors flex items-center gap-2 group">
-                  Browse {LISTINGS.length} rooms<ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  Browse {listings.length} rooms<ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a href="#list" className="border-2 border-[#0F1115] px-6 py-3 text-[15px] font-medium hover:bg-[#D9F54B] transition-colors">
                   List yours →
